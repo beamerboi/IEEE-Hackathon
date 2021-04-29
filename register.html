@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="stylesheet" href="./css/form-design.css">
+    <title>Register</title>
+  </head>
+  <body>
+    <div class="waveWrapper waveAnimation">
+      <div class="waveWrapperInner bgTop">
+        <div
+          class="wave waveTop"
+          style="
+            background-image: url('http://front-end-noobs.com/jecko/img/wave-top.png');
+          "
+        ></div>
+      </div>
+      <div class="waveWrapperInner bgMiddle">
+        <div
+          class="wave waveMiddle"
+          style="
+            background-image: url('http://front-end-noobs.com/jecko/img/wave-mid.png');
+          "
+        ></div>
+      </div>
+      <div class="waveWrapperInner bgBottom">
+        <div
+          class="wave waveBottom"
+          style="
+            background-image: url('http://front-end-noobs.com/jecko/img/wave-bot.png');
+          "
+        ></div>
+      </div>
+    </div>
+    <form action="register.php" method="POST">
+
+      <div id="formWrapper">
+      <div id="form">
+      <div class="register">
+        <h1>Register</h1>
+      </div>
+      <div class="form-item">
+        <p class="formLabel">First name</p>
+        <input type="text" name="fname" id="Fname" class="form-style" autocomplete="off"/>
+      </div>
+      <div class="form-item">
+        <p class="formLabel">Last name</p>
+        <input type="text" name="lname" id="Lname" class="form-style" autocomplete="off"/>
+      </div>
+      
+          <div class="form-item">
+            <p class="formLabel">Email</p>
+            <input type="email" name="email" id="email" class="form-style" autocomplete="off"/>
+          </div>
+          <input type="hidden" name="usertype" value="user">
+          <div class="form-item">
+            <p class="formLabel">Password</p>
+            <input type="password" name="password" id="password" class="form-style" />
+            <!-- <div class="pw-view"><i class="fa fa-eye"></i></div> -->
+            <p><a href="#" ><small>Forgot Password ?</small></a></p>	
+          </div>
+          <div class="form-item">
+          <p class="pull-left"><a href="login_1.php"><small>Login</small></a></p>
+          <input type="submit" class="login pull-right" value="Log In">
+          <div class="clear-fix"></div>
+          </div>
+      </div>
+      </div>
+    </form>
+
+      <script src="https://code.jquery.com/jquery-2.1.0.min.js" ></script>
+      <script src="./js/form-design.js"></script>
+  </body>
+</html>
